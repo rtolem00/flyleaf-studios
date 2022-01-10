@@ -1,17 +1,25 @@
 <template>
   <div class="links" :class="{ desktop: !isMobile }">
-    <div class="watch-trailer btn">
+    <a
+      class="watch-trailer btn"
+      href="https://www.youtube.com/watch?v=UF1Ylj0txuY&t=52s&ab_channel=JuanGabrielGomilaSalas"
+      target="_blank"
+    >
       <h3>WATCH TRAILER</h3>
       <span class="icon">
         <img :src="require('@/assets/icons/landing/play.svg')" alt="unity logo" />
       </span>
-    </div>
-    <div class="purchase-now btn">
+    </a>
+    <a
+      class="purchase-now btn"
+      href="https://store.steampowered.com/app/1829200/Kandra_The_Moonwalker/?beta=0"
+      target="_blank"
+    >
       <span class="icon">
         <img :src="require('@/assets/icons/landing/control.svg')" alt="unity logo" />
       </span>
       <h3>PURCHASE NOW</h3>
-    </div>
+    </a>
   </div>
 </template>
 <script lang="ts">
@@ -44,6 +52,7 @@ export default defineComponent({
       color: #fff;
       border-radius: 20px;
       padding: 10px 30px;
+      text-decoration: none;
       h3 {
         font-size: 20px;
       }
@@ -62,9 +71,8 @@ export default defineComponent({
     &.desktop {
       width: 50%;
       flex-flow: row;
-      justify-content: space-between;
-      > div {
-        margin: 0 40px;
+      .btn {
+        margin: 0 20px;
         cursor: pointer;
         &:hover {
           opacity: 0.6;
