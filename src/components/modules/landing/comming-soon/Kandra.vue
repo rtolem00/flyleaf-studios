@@ -221,11 +221,21 @@ export default defineComponent({
         width: 100%;
         video {
           width: 50%;
-          padding: 0 50px;
+          margin: 0 50px;
+          -moz-border-radius: 40px;
+          -webkit-border-radius: 40px;
+          border-radius: 40px;
+          overflow: hidden;
         }
         .header-game-resume {
           width: 50%;
-          padding: 0 10%;
+          padding: 0 20px;
+          .title {
+            font-size: 32px;
+          }
+          .description {
+            font-size: 24px;
+          }
         }
       }
       > div:nth-child(odd) {
