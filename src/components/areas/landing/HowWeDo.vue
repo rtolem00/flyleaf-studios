@@ -99,8 +99,9 @@ export default defineComponent({
   .expert-in-boxes {
     margin-top: 50px;
     width: 100%;
-    > div {
-      margin: 20px 0;
+    .expert-in-box-container {
+      max-width: 620px;
+      margin: 20px auto;
     }
   }
 
@@ -125,7 +126,7 @@ export default defineComponent({
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 50px;
+        padding: 0 25px;
       }
     }
   }

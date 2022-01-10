@@ -183,6 +183,7 @@ export default defineComponent({
         z-index: -1;
         video {
           width: 100%;
+          min-height: 100%;
         }
         .bg {
           width: 100%;

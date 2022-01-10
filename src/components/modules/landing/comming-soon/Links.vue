@@ -36,7 +36,8 @@ export default defineComponent({
     width: 100%;
     .btn {
       margin: 10px 0;
-      width: 80%;
+      width: 90%;
+      max-width: 300px;
       display: flex;
       justify-content: space-between;
       align-items: center;

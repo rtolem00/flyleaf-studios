@@ -86,12 +86,16 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     color: #fff;
+    width: 100%;
     .title {
       color: $title-purple;
       h3 {
         margin-top: 0;
         font-size: 25px;
       }
+    }
+    .text {
+      max-width: 600px;
     }
   }
 }
