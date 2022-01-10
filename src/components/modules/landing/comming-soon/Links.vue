@@ -57,12 +57,12 @@ export default defineComponent({
         font-size: 20px;
       }
       &.watch-trailer {
-        background: linear-gradient(-45deg, #6e358c, #523372, #3b2d56, #2a2539, #1c1c1c);
+        background: linear-gradient(-45deg, $title-purple, #523372, #3b2d56, #2a2539, $grey-background);
         background-size: 400% 400%;
         animation: gradient_animation 7s ease infinite;
       }
       &.play-now {
-        background: linear-gradient(-45deg, #1c1c1c, #364352, #367386, #35a7a8, #6ddbb1);
+        background: linear-gradient(-45deg, $grey-background, #364352, #367386, #35a7a8, $title-blue);
         background-size: 400% 400%;
         animation: gradient_animation 7s ease infinite;
       }

@@ -1,5 +1,5 @@
 <template>
-  <div class="unity-container">
+  <div id="unity-container">
     <Box>
       <div class="box-content">
         <div class="header">
@@ -25,7 +25,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.unity-container {
+#unity-container {
   width: 100%;
   height: 100%;
   display: flex;

@@ -1,5 +1,5 @@
 <template>
-  <div class="p2e-container">
+  <div id="p2e-container">
     <Box>
       <div class="box-content">
         <div class="header">
@@ -32,7 +32,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.p2e-container {
+#p2e-container {
   width: 100%;
   height: 100%;
   display: flex;

@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutus-container" :class="{ desktop: !isMobile }">
+  <div id="aboutus-container" :class="{ desktop: !isMobile }">
     <div class="header">
       <div class="header-bg"></div>
       <div class="title-container">
@@ -41,7 +41,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.aboutus-container {
+#aboutus-container {
   width: 100vw;
   min-height: 50vh;
   overflow: hidden;

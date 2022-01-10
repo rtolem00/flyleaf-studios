@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="{ desktop: !isMobile }">
+  <div id="frontpage-container" :class="{ desktop: !isMobile }">
     <video autoplay playsinline loop muted class="background">
       <source :src="require('@/assets/videos/landing/home-background.mp4')" type="video/mp4" />
     </video>
@@ -27,7 +27,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.container {
+#frontpage-container {
   height: 100vh;
   display: flex;
   flex-flow: column;

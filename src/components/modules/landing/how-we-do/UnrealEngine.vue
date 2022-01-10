@@ -1,5 +1,5 @@
 <template>
-  <div class="unreal-engine-container">
+  <div id="unreal-engine-container">
     <Box>
       <div class="box-content">
         <div class="header">
@@ -25,7 +25,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.unreal-engine-container {
+#unreal-engine-container {
   width: 100%;
   height: 100%;
   display: flex;

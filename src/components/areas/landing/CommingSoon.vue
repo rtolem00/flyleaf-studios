@@ -1,5 +1,5 @@
 <template>
-  <div class="commingsoon-container" :class="{ desktop: !isMobile }">
+  <div id="commingsoon-container" :class="{ desktop: !isMobile }">
     <div class="header" :data-aos="TransitionType.ZOOM_IN">
       <h2 class="title">COMING SOON</h2>
     </div>
@@ -29,7 +29,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.commingsoon-container {
+#commingsoon-container {
   .header {
     display: flex;
     flex-flow: column;

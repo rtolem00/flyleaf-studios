@@ -1,5 +1,5 @@
 <template>
-  <div class="container-values" :class="{ desktop: !isMobile }">
+  <div id="companyvalues-container" :class="{ desktop: !isMobile }">
     <div class="header" :data-aos="TransitionType.FADE_UP">
       <h2>COMPANY VALUES</h2>
     </div>
@@ -82,7 +82,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.container-values {
+#companyvalues-container {
   position: relative;
   .header {
     text-align: center;

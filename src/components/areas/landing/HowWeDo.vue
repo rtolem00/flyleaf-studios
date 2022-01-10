@@ -1,5 +1,5 @@
 <template>
-  <div class="howwedo-container" :class="{ desktop: !isMobile }">
+  <div id="howwedo-container" :class="{ desktop: !isMobile }">
     <div class="header">
       <div class="header-bg"></div>
       <div class="header-container">
@@ -47,13 +47,13 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.howwedo-container {
+#howwedo-container {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #000;
+  background-color: $body-background-color;
   .header {
     color: #fff;
     text-align: center;
