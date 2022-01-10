@@ -1,7 +1,7 @@
 <template>
   <div class="container-values" :class="{ desktop: !isMobile }">
     <div class="header" :data-aos="TransitionType.FADE_UP">
-      <h2>Company Values</h2>
+      <h2>COMPANY VALUES</h2>
     </div>
     <div class="company-values-container">
       <div class="company-value" v-for="(companyValue, index) in companyValues" :key="`cv-${companyValue.title}`">
@@ -49,17 +49,17 @@ export default defineComponent({
     const companyValues: Array<CompanyValue> = [
       {
         title: 'Ambition',
-        text: 'It is our initial value, from here we we start by setting out our objectives and where we want to we want to reach with the resources we have.',
+        text: 'To unleash the potential of bringing outstanding projects to life with our dedicated team of developers and artists.',
         icon: 'ambition.svg',
       },
       {
         title: 'Perseverance',
-        text: 'Our second value is the basic pillar on which all our work is based, as it will be in charge of making our objectives and aspirations tangible. aspirations previously objectives and aspirations.',
+        text: 'To make dreams come true. With the right combination of passion and talent, the impossible becomes tangible.',
         icon: 'perseverance.svg',
       },
       {
         title: 'Innovation',
-        text: 'Our last value is the result of the two previous ones, which gives us the ability to do something different. It is not only limited to games, it also affects the way we work. also affects the way we work.',
+        text: ' Aspirations are made of thin air without an innovative approach. We combine our expertise and creativity to add unique value to everything we do.',
         icon: 'innovation.svg',
       },
     ];
@@ -111,6 +111,11 @@ export default defineComponent({
   &.desktop {
     width: 80%;
     margin: auto;
+    .header {
+      h2 {
+        font-size: 42px;
+      }
+    }
     .company-values-container {
       display: flex;
       flex-flow: row;

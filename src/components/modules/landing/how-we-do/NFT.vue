@@ -6,13 +6,13 @@
           <span class="icon">
             <img :src="require('@/assets/icons/landing/nft.svg')" alt="unity logo" />
           </span>
-          <h3 class="title">NON FUNGIBLE TOKEN</h3>
+          <h3 class="title">NON FUNGIBLE TOKENs</h3>
         </div>
         <div class="description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ipsum sed mollis placerat, ligula elit
-            blandit erat, eget maximus purus purus quis lectus. Etiam et tristique augue. Phasellus ex metus, iaculis
-            nec erat at, sollicitudin posuere quam.
+            The best video games involve outstanding art and collectibles. NFTs open unexplored possibilities of
+            collecting and appreciating art, providing utility to communities and its members way beyond the in-game
+            experience.
           </p>
         </div>
       </div>

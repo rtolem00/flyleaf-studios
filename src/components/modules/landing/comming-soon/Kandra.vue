@@ -15,9 +15,9 @@
       <img :src="require('@/assets/img/landing/kandra-logo.png')" alt="kandra logo" />
       <div class="kandra-introduction">
         <p>
-          Kandra: The Moonwalker is a 3D platformer demo inspired by the great classics of Nintendo 64 and PlayStation
-          like Spyro or Banjo Kazooie. In Kandra's universe the other Moonwalkers have disappeared and with them the
-          magic has diseppeared. Kandra's goal as one of the last remaining Moonwalkers is to find her friends and
+          Kandra: The Moonwalker is a 3D platformer game inspired by the great classics of Nintendo 64 and PlayStation
+          like Spyro or Banjo Kazooie. In Kandra’s universe, the other Moonwalkers have disappeared and, with them, the
+          magic of the world is gone. Kandra's goal as one of the last remaining Moonwalkers is to find her friends and
           recover the magic feathers.
         </p>
       </div>
@@ -29,8 +29,8 @@
           <h3 class="title">Find collectibles!</h3>
           <div class="description">
             <p>
-              Collect feathers, gems and other collectibles to unlock abilities, open portals and progress towards your
-              goal: collecting all the magic feathers and returning magic to the world.
+              Collect feathers, gems, and other elements to unlock abilities, open portals, and progress towards your
+              goal: catch all the magic feathers to bring back the magic to Kandra’s world.
             </p>
           </div>
         </div>
@@ -49,8 +49,8 @@
           <h3 class="title">Defeat enemies and bosses!</h3>
           <div class="description">
             <p>
-              Fight against enemies that want to block your waym, from mere minions to bosses. Use different skills for
-              different combat situations.
+              Fight against enemies, from mere minions to dark bosses, that refuse to return the magic of the
+              moonwalkers to this world. Apply Kandra’s skills to get an edge in problematic situations.
             </p>
           </div>
         </div>
@@ -68,7 +68,9 @@
         <div class="header-game-resume">
           <h3 class="title">Get new skills for Kandra!</h3>
           <div class="description">
-            <p>Unlock new skills to face enemies in new ways and overcome environmental challenges.</p>
+            <p>
+              Learn new skills to defeat threatening enemies and overcome environmental challenges to restore the magic.
+            </p>
           </div>
         </div>
         <video
@@ -82,10 +84,11 @@
       </div>
       <div class="explore" :data-aos="TransitionType.FADE_LEFT">
         <div class="header-game-resume">
-          <h3 class="title">Explore the different worlds and bring back the magic!</h3>
+          <h3 class="title">Explore unique worlds!</h3>
           <div class="description">
             <p>
-              Explore worlds, help their inhabitants, beat the bad guys and collect gems and feathers to restore order.
+              Spy out the vast lands, help its inhabitants, beat the bad guys, and find all the secret collectibles to
+              restore order in Kandra’s world.
             </p>
           </div>
         </div>

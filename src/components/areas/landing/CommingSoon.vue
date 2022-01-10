@@ -1,7 +1,7 @@
 <template>
   <div class="commingsoon-container" :class="{ desktop: !isMobile }">
     <div class="header" :data-aos="TransitionType.ZOOM_IN">
-      <h2 class="title">Comming soon</h2>
+      <h2 class="title">COMING SOON</h2>
     </div>
     <div class="content">
       <Kandra />
@@ -38,6 +38,13 @@ export default defineComponent({
     .title {
       color: $title-blue;
       font-size: 35px;
+    }
+  }
+  &.desktop {
+    .header {
+      .title {
+        font-size: 42px;
+      }
     }
   }
 }

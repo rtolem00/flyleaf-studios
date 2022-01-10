@@ -3,12 +3,7 @@
     <div class="header">
       <div class="header-bg"></div>
       <div class="header-container">
-        <h2 class="title">We are experts in</h2>
-        <span class="description">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </span>
+        <h2 class="title">WE ARE EXPERTS IN</h2>
       </div>
     </div>
     <div class="expert-in-boxes">
@@ -72,6 +67,8 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 200px;
+
     .header-bg {
       background-color: $opaque-background;
       width: 100%;
@@ -110,8 +107,10 @@ export default defineComponent({
       background-attachment: fixed;
       width: 100%;
       .header-container {
-        padding: 50px 10px;
         width: 50%;
+        .title {
+          font-size: 42px;
+        }
       }
     }
     .expert-in-boxes {

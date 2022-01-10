@@ -6,15 +6,13 @@
           <span class="icon">
             <img :src="require('@/assets/icons/landing/blockchain.svg')" alt="unity logo" />
           </span>
-          <h3 class="title">BLOCKCHAIN TECNOLOGY</h3>
+          <h3 class="title">BLOCKCHAIN TECHNOLOGY</h3>
         </div>
         <div class="description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ipsum sed mollis placerat, ligula elit
-            blandit erat, eget maximus purus purus quis lectus. Etiam et tristique augue. Phasellus ex metus, iaculis
-            nec erat at, sollicitudin posuere quam. çLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            ornare, ipsum sed mollis placerat, ligula elit blandit erat, eget maximus purus purus quis lectus. Etiam et
-            tristique augue. Phasellus ex metus, iaculis nec erat at, sollicitudin posuere quam.
+            Implement blockchain technology to take your product experience to the next level. Blockchain-based gaming
+            development unleashes the potential of decentralized ownership of in-game assets, providing full control of
+            transfer and use properties in virtual goods.
           </p>
         </div>
       </div>

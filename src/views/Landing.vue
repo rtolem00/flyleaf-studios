@@ -13,16 +13,16 @@
       <CompanyValues />
     </section>
     <section id="who-we-are">
-      <WhoWeAre />
+      <AboutUs />
     </section>
   </div>
 </template>
 
 <script lang="ts">
+import AboutUs from '@/components/areas/landing/AboutUs.vue';
 import CommingSoon from '@/components/areas/landing/CommingSoon.vue';
 import FrontPage from '@/components/areas/landing/FrontPage.vue';
 import HowWeDo from '@/components/areas/landing/HowWeDo.vue';
-import WhoWeAre from '@/components/areas/landing/WhoWeAre.vue';
 import CompanyValues from '@/components/modules/landing/front-page/CompanyValues.vue';
 import { sessionManager } from '@/core/modules/session';
 import { defineComponent } from 'vue';
@@ -33,7 +33,7 @@ export default defineComponent({
     FrontPage,
     CompanyValues,
     HowWeDo,
-    WhoWeAre,
+    AboutUs,
     CommingSoon,
   },
   setup() {

@@ -10,9 +10,9 @@
         </div>
         <div class="description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ipsum sed mollis placerat, ligula elit
-            blandit erat, eget maximus purus purus quis lectus. Etiam et tristique augue. Phasellus ex metus, iaculis
-            nec erat at, sollicitudin posuere quam.
+            No doubt video games are competitive and fun, but PlayToEarn games enable players to socialize and engage in
+            the economy of a whole universe with limitless possibilities. In addition to the significant rewards for
+            players' performance, P2E offers new opportunities to add capital to the digital economy.
           </p>
         </div>
       </div>

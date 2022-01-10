@@ -11,14 +11,14 @@
       </span>
     </a>
     <a
-      class="purchase-now btn"
+      class="play-now btn"
       href="https://store.steampowered.com/app/1829200/Kandra_The_Moonwalker/?beta=0"
       target="_blank"
     >
       <span class="icon">
         <img :src="require('@/assets/icons/landing/control.svg')" alt="unity logo" />
       </span>
-      <h3>PURCHASE NOW</h3>
+      <h3>PLAY NOW</h3>
     </a>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default defineComponent({
         background-size: 400% 400%;
         animation: gradient_animation 7s ease infinite;
       }
-      &.purchase-now {
+      &.play-now {
         background: linear-gradient(-45deg, #1c1c1c, #364352, #367386, #35a7a8, #6ddbb1);
         background-size: 400% 400%;
         animation: gradient_animation 7s ease infinite;

@@ -8,13 +8,6 @@
           </span>
           <h3 class="title">UNITY GAME DEVELOPMENT</h3>
         </div>
-        <div class="description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ipsum sed mollis placerat, ligula elit
-            blandit erat, eget maximus purus purus quis lectus. Etiam et tristique augue. Phasellus ex metus, iaculis
-            nec erat at, sollicitudin posuere quam.
-          </p>
-        </div>
       </div>
     </Box>
   </div>
@@ -61,9 +54,6 @@ export default defineComponent({
         margin: 0;
         text-align: center;
       }
-    }
-    .description {
-      text-align: center;
     }
   }
 }

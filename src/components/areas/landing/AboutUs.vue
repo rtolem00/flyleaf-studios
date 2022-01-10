@@ -1,12 +1,12 @@
 <template>
-  <div class="whoweare-container" :class="{ desktop: !isMobile }">
+  <div class="aboutus-container" :class="{ desktop: !isMobile }">
     <div class="header">
       <div class="header-bg"></div>
       <div class="title-container">
-        <h2 :data-aos="TransitionType.ZOOM_IN" class="title">Who we are</h2>
+        <h2 :data-aos="TransitionType.ZOOM_IN" class="title">ABOUT US</h2>
       </div>
     </div>
-    <div class="whoweare-description">
+    <div class="aboutus-description">
       <div :data-aos="TransitionType.ZOOM_IN" class="description">
         <p>
           The studio is made up of professionals from different sectors who have come together to develop a project with
@@ -30,7 +30,7 @@ import { sessionManager } from '@/core/modules/session';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'WhoWeAre',
+  name: 'AboutUs',
   setup() {
     return {
       isMobile: sessionManager.isMobile,
@@ -41,7 +41,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.whoweare-container {
+.aboutus-container {
   width: 100vw;
   min-height: 50vh;
   overflow: hidden;
@@ -81,7 +81,7 @@ export default defineComponent({
       margin: 0;
     }
   }
-  .whoweare-description {
+  .aboutus-description {
     padding: 0 20px;
     display: flex;
     flex-flow: column;
@@ -102,8 +102,11 @@ export default defineComponent({
     .header {
       background-attachment: fixed;
       background-position: initial;
+      .title {
+        font-size: 42px;
+      }
     }
-    .whoweare-description {
+    .aboutus-description {
       display: flex;
       flex-flow: row;
       justify-content: center;
