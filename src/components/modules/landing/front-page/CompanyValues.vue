@@ -91,20 +91,23 @@ export default defineComponent({
     font-size: 25px;
     margin-bottom: 55px;
   }
-  .company-value {
-    position: relative;
-    margin: 20px 0;
-    width: 100vw;
-    height: 250px;
-    .diagonal-box {
+  .company-values-container {
+    .company-value {
+      position: relative;
+      margin: 20px 0;
       width: 100vw;
-      height: 220px;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
+      height: 250px;
+      .diagonal-box {
+        width: 100vw;
+        height: 220px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
+
   &.desktop {
     width: 80%;
     margin: auto;

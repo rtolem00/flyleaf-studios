@@ -46,7 +46,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .main-container {
-  :not(.desktop) {
+  &:not(.desktop) {
     overflow: hidden;
     section {
       display: flex;

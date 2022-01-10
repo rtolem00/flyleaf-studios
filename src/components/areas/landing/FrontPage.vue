@@ -56,9 +56,10 @@ export default defineComponent({
   }
   &.desktop {
     justify-content: center;
+    overflow: hidden;
     .background {
       height: auto;
-      width: 100vw;
+      width: 100%;
     }
     h1 {
       font-size: 70px;
