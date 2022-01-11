@@ -119,13 +119,17 @@ export default defineComponent({
       justify-content: center;
       align-items: stretch;
       flex-wrap: wrap;
-      width: 70%;
+      width: 80%;
       .expert-in-box-container {
-        flex: 1 0 33%;
+        width: 33%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        padding: 0 25px;
+        padding: 0;
+        min-width: 320px;
+        padding: 15px;
+        margin: 0;
+        min-width: 330px;
       }
     }
   }

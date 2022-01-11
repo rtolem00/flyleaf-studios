@@ -6,7 +6,7 @@
           <span class="icon">
             <img :src="require('@/assets/icons/landing/nft.svg')" alt="unity logo" />
           </span>
-          <h3 class="title">NON FUNGIBLE TOKENs</h3>
+          <h3 class="title">NON FUNGIBLE TOKENS</h3>
         </div>
         <div class="description">
           <p>

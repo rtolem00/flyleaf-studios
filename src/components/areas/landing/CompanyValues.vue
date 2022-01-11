@@ -121,35 +121,40 @@ export default defineComponent({
       flex-flow: row;
       justify-content: center;
       align-items: stretch;
+      flex-wrap: wrap;
       .company-value {
         width: 33%;
-        padding: 0 50px;
+        padding: 0 25px;
         height: auto;
-        .box-content {
-          display: flex;
-          flex-flow: column;
-          justify-content: center;
-          align-items: center;
-          .box-header {
+        max-width: 350px;
+        min-width: 275px;
+        .box-container {
+          .box-content {
             display: flex;
             flex-flow: column;
             justify-content: center;
             align-items: center;
-            margin-bottom: 5px;
-            .icon {
-              margin-bottom: 10px;
+            .box-header {
               display: flex;
+              flex-flow: column;
               justify-content: center;
+              align-items: center;
+              margin-bottom: 5px;
+              .icon {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+              }
+              .title {
+                color: $title-purple;
+                margin: 0;
+                text-align: center;
+              }
             }
-            .title {
-              color: $title-purple;
-              margin: 0;
+            .description {
+              color: #fff;
               text-align: center;
             }
-          }
-          .description {
-            color: #fff;
-            text-align: center;
           }
         }
       }
