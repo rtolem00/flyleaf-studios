@@ -9,7 +9,7 @@
       </div>
       <div class="redirection">
         <span>Drop us a line.</span>
-        <a href="mailto:info@flyleafs.es" target="_blank">Write Us</a>
+        <a href="mailto:info@flyleafs.es" target="_blank">Send Email</a>
       </div>
     </Box>
   </div>
