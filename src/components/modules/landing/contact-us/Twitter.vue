@@ -9,7 +9,7 @@
       </div>
       <div class="redirection">
         <span>Tweet us.</span>
-        <a href="https://twitter.com/FlyleafStudios" target="_blank">DM Us</a>
+        <a href="https://twitter.com/FlyleafStudios" target="_blank">DM</a>
       </div>
     </Box>
   </div>
