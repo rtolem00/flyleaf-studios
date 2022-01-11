@@ -3,7 +3,7 @@
     <div class="content">
       <div class="header" :data-aos="TransitionType.FADE_DOWN">
         <h2>Contact us</h2>
-        <h3>Support, Sales & Product Information</h3>
+        <h3>Support, Sales & Product Development</h3>
       </div>
       <div class="social-networks" :data-aos="TransitionType.FADE_UP">
         <Twitter />
