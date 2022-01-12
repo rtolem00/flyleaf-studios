@@ -8,8 +8,8 @@
         <h3 class="title">Twitter</h3>
       </div>
       <div class="redirection">
-        <span>Tweet us.</span>
-        <a href="https://twitter.com/FlyleafStudios" target="_blank">DM Us</a>
+        <span>Tweet us</span>
+        <a href="https://twitter.com/FlyleafStudios" target="_blank">DM</a>
       </div>
     </Box>
   </div>
