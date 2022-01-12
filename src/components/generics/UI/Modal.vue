@@ -63,7 +63,9 @@ export default defineComponent({
     margin: 0 auto;
     overflow-y: auto;
     max-width: 600px;
-    padding: 25px;
+    .slot-wrapper {
+      padding: 25px;
+    }
     @media screen and (min-width: $breakpoint-tablet-width) {
       &::-webkit-scrollbar {
         display: none;
@@ -76,6 +78,8 @@ export default defineComponent({
       left: 50%;
       transform: translate(-50%, -50%);
       position: fixed;
+      width: 100%;
+      max-height: 100vh;
     }
   }
   .modal-wrapper {

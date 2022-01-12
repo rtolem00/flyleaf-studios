@@ -1,6 +1,15 @@
 <template>
-  <div id="cookies-container">
-    <span @click="onUpdateShowModal(LegalTypes.COOKIES)">Cookies Policy</span>
+  <div id="acceptcookies-container">
+    <div class="accept-cookies">
+      <p class="text">
+        This website uses cookies and/or similar technologies that store and retrieve information when you browse.
+        Cookies allow a website, among other things, to store and retrieve information about the browsing habits of a
+        User or their equipment and, depending on the information it contains and the way you use your computer, can be
+        used to recognize the User.
+        <span @click="onUpdateShowModal(LegalTypes.COOKIES)" class="more-info">More info</span>
+      </p>
+      <span class="accept btn" @click="setCookie">Accept Cookies</span>
+    </div>
     <Modal @close="onUpdateShowModal(LegalTypes.COOKIES)" v-if="showCookies">
       <div>
         <h2>Cookie Policy</h2>
@@ -79,40 +88,75 @@
 <script lang="ts">
 import Modal from '@/components/generics/UI/Modal.vue';
 import logicComposable, { LegalTypes } from '@/core/components-logic/logicLegalModals';
+import { App } from '@/core/helpers/tools';
+import { sessionManager } from '@/core/modules/session';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Cookies',
+  name: 'AcceptCookies',
   components: {
     Modal,
   },
   setup() {
-    const { showLegalNotes, onUpdateShowModal } = logicComposable();
+    const { showCookies, onUpdateShowModal } = logicComposable();
+
+    const setCookie = () => {
+      App.Methods.setCookie({ name: 'flyleaf_cookies_accepted', value: 'true' });
+      sessionManager.setCookiesAccepted();
+    };
     return {
-      showLegalNotes,
+      showCookies,
       LegalTypes,
       onUpdateShowModal,
+      setCookie,
     };
   },
 });
 </script>
 
 <style lang="scss" scoped>
-#cookies-container {
-  > span {
-    cursor: pointer;
-  }
-  .close-button {
-    padding: 10px 20px;
+#acceptcookies-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .accept-cookies {
+    width: 1200px;
+    flex-flow: column;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 32px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: $title-blue;
-    color: #fff;
-    width: 50%;
-    cursor: pointer;
-    margin: auto;
+    .text {
+      line-height: 1.4em;
+      .more-info {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+    .accept.btn {
+      margin: auto;
+      cursor: pointer;
+      padding: 10px 20px;
+      display: flex;
+      border-radius: 20px;
+      background-color: $title-blue;
+      color: #fff;
+      cursor: pointer;
+    }
   }
+}
+.close-button {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: $title-blue;
+  color: #fff;
+  width: 50%;
+  cursor: pointer;
+  margin: auto;
 }
 </style>

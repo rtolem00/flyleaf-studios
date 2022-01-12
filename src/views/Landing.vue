@@ -18,6 +18,7 @@
     <section id="contact-us">
       <ContactUs />
     </section>
+    <AcceptCookies v-if="!sessionState.cookiesAccepted" :data-aos="TransitionType.FADE_UP" />
   </div>
 </template>
 
@@ -28,6 +29,8 @@ import CompanyValues from '@/components/areas/landing/CompanyValues.vue';
 import ContactUs from '@/components/areas/landing/ContactUs.vue';
 import FrontPage from '@/components/areas/landing/FrontPage.vue';
 import HowWeDo from '@/components/areas/landing/HowWeDo.vue';
+import AcceptCookies from '@/components/generics/UX/AcceptCookies.vue';
+import { TransitionType } from '@/core/funnel/landing/types';
 import { sessionManager } from '@/core/modules/session';
 import { defineComponent } from 'vue';
 
@@ -40,10 +43,14 @@ export default defineComponent({
     AboutUs,
     CommingSoon,
     ContactUs,
+    AcceptCookies,
   },
   setup() {
+    const sessionState = sessionManager.state;
     return {
       isMobile: sessionManager.isMobile,
+      sessionState,
+      TransitionType,
     };
   },
 });

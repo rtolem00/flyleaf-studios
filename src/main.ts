@@ -1,4 +1,5 @@
 import App from '@/App.vue';
+import { appController } from '@/core/app';
 import router from '@/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,6 +18,8 @@ const app = createApp(App);
 
 // @ts-ignore
 app.AOS = new AOS.init();
+
+router.isReady().then(async () => appController.initialize());
 
 // @ts-ignore
 app.use(router).use(PrimeVue).use(AOS).mount('#app');
