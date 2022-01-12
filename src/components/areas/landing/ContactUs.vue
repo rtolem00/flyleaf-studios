@@ -10,11 +10,19 @@
         <Email />
       </div>
     </div>
+    <div class="legal">
+      <LegalNotice />
+      <PrivacyPolicy />
+      <Cookies />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
+import Cookies from '@/components/modules/landing/contact-us/Cookies.vue';
 import Email from '@/components/modules/landing/contact-us/Email.vue';
+import LegalNotice from '@/components/modules/landing/contact-us/LegalNotice.vue';
+import PrivacyPolicy from '@/components/modules/landing/contact-us/PrivacyPolicy.vue';
 import Twitter from '@/components/modules/landing/contact-us/Twitter.vue';
 import { TransitionType } from '@/core/funnel/landing/types';
 import { sessionManager } from '@/core/modules/session';
@@ -24,6 +32,9 @@ export default defineComponent({
   components: {
     Twitter,
     Email,
+    LegalNotice,
+    PrivacyPolicy,
+    Cookies,
   },
   props: {
     blackBackground: {
@@ -50,6 +61,17 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     flex-flow: column;
+  }
+  .legal {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    > div {
+      margin: 0 10px;
+    }
   }
   .header {
     color: #fff;
