@@ -1,5 +1,5 @@
 <template>
-  <div id="acceptcookies-container">
+  <div id="acceptcookies-container" :class="{ desktop: !isMobile }">
     <div class="accept-cookies">
       <p class="text">
         This website uses cookies and/or similar technologies that store and retrieve information when you browse.
@@ -109,6 +109,7 @@ export default defineComponent({
       LegalTypes,
       onUpdateShowModal,
       setCookie,
+      isMobile: sessionManager.isMobile,
     };
   },
 });
@@ -144,6 +145,20 @@ export default defineComponent({
       background-color: $title-blue;
       color: #fff;
       cursor: pointer;
+    }
+  }
+
+  &.desktop {
+    .accept-cookies {
+      flex-flow: row;
+      .text {
+        width: 80%;
+      }
+      .accept.btn {
+        margin: unset;
+        align-self: flex-end;
+        margin-left: auto;
+      }
     }
   }
 }
