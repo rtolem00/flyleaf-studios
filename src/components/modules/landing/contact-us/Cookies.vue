@@ -87,9 +87,9 @@ export default defineComponent({
     Modal,
   },
   setup() {
-    const { showLegalNotes, onUpdateShowModal } = logicComposable();
+    const { showCookies, onUpdateShowModal } = logicComposable();
     return {
-      showLegalNotes,
+      showCookies,
       LegalTypes,
       onUpdateShowModal,
     };
@@ -102,17 +102,17 @@ export default defineComponent({
   > span {
     cursor: pointer;
   }
-  .close-button {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: $title-blue;
-    color: #fff;
-    width: 50%;
-    cursor: pointer;
-    margin: auto;
-  }
+}
+.close-button {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: $title-blue;
+  color: #fff;
+  width: 50%;
+  cursor: pointer;
+  margin: auto;
 }
 </style>
